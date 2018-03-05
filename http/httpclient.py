@@ -1,4 +1,4 @@
-import requests
+import requests, json
 resp = requests.get("http://localhost:8080/qin/map/test")
 print(resp.status_code)
 print(resp.text)
