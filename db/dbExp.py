@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import pymysql, json
  
@@ -9,7 +8,7 @@ db = pymysql.connect("192.168.1.66","fuyongde","fuyongde","quickstart" )
 cursor = db.cursor()
  
 # 使用 execute()  方法执行 SQL 查询 
-cursor.execute("SELECT * FROM website")
+cursor.execute("SELECT * FROM `website`")
  
 # 使用 fetchone() 方法获取单条数据.
 data = cursor.fetchall()
